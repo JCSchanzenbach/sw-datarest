@@ -1,0 +1,12 @@
+Id,Name,Umsatz,Geschaeftskennzahlentendenz
+1,Unternehmen A,10 Mio Euro,positiv 
+2,Unternehmen B,15 Mio Euro,neutral
+3,Unternehmen C,20 Mio Euro,neutral
+4,Unternehmen D,5 Mio Euro,negativ
+5,Unternehmen E,25 Mio Euro,neutral
+6,Unternehmen F,2 Mio Euro,negativ
+7,Unternehmen G,30 Mio Euro,neutral
+8,Unternehmen H,50 Mio Euro,positiv
+9,Unternehmen I,15 Mio Euro,neutral
+10,Unternehmen J,20 Mio Euro,negativ
+11,Unternehmen K,25 Mio Euro,neutral

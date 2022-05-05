@@ -1,6 +1,7 @@
 # cli.py
 
 import sys
+from . import init_db
 
 
 def parse_args(args=None):
@@ -10,11 +11,12 @@ def parse_args(args=None):
     import argparse
     parser = argparse.ArgumentParser()
     # Add arguments here
-    # …
+    # 
 
     subparsers = parser.add_subparsers()
     parser_init = subparsers.add_parser('init')
-  
+    parser_init.set_defaults(func=init_db.init)
+
     parser_run = subparsers.add_parser('run')
     parser_run.add_argument('--host', help='host-adresse')
     parser_run.add_argument('--port', type=int, help='port-adresse')
@@ -26,7 +28,6 @@ def parse_args(args=None):
 
 def main(args=None):
     """Main module function.
-
     Exposes this modules' executable functionality for use as a module
     function. 
     Parses arguments from sys.argv if args is None (the default) or from args
