@@ -1,0 +1,13 @@
+datarest:
+  fastapi:
+    app:
+      title: "Unternehmenskennzahlen"
+      description: "Liefert die aktuellsten Unternehmenskennzahlen zu versch. Unternehmen"
+      version: "0.1.0"
+  database:
+    connect_string: "sqlite:///app.db"
+  data:
+    kennzahlen:
+      profile: "database-sqlalchemy"
+      schema_specification: "https://www.sqlalchemy.org/"
+      dbtable: "t_kennzahlen"
